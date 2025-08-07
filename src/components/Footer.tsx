@@ -37,10 +37,10 @@ const Footer: React.FC = () => {
     {
       title: 'Support',
       links: [
-        { name: 'Help Center', path: '/contact' },
-        { name: 'Privacy Policy', path: '/contact' },
-        { name: 'Terms of Service', path: '/contact' },
-        { name: 'FAQ', path: '/contact' },
+        { name: 'Help Center', path: '/help' },
+        { name: 'Privacy Policy', path: '/privacy' },
+        { name: 'Terms of Service', path: '/terms' },
+        { name: 'FAQ', path: '/faq' },
       ],
     },
   ];
