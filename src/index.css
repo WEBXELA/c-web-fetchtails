@@ -24,6 +24,16 @@
     transform: none !important;
   }
   
+  /* Fallback visibility for motion components */
+  [data-framer-motion] {
+    opacity: 1 !important;
+  }
+  
+  /* Ensure all content sections are visible */
+  section {
+    opacity: 1 !important;
+  }
+  
   /* Professional border animations */
   .border-animate {
     position: relative;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Heart, 
@@ -11,6 +11,19 @@ import {
 } from 'lucide-react';
 
 const About: React.FC = () => {
+  // Ensure all content is visible after a delay
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.style.opacity = '1';
+        section.style.visibility = 'visible';
+      });
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const values = [
     {
       icon: Heart,
@@ -138,7 +151,7 @@ const About: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.8 }}
               className="space-y-6"
             >
@@ -185,7 +198,7 @@ const About: React.FC = () => {
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.8 }}
               className="relative"
             >
@@ -216,7 +229,7 @@ const About: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -234,7 +247,7 @@ const About: React.FC = () => {
                 key={value.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="card p-6 text-center group card-hover border-animate"
               >
@@ -259,7 +272,7 @@ const About: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -281,7 +294,7 @@ const About: React.FC = () => {
                   key={milestone.year}
                   initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
+                  viewport={{ once: true, amount: 0.1 }}
                   transition={{ duration: 0.8, delay: index * 0.1 }}
                   className={`relative flex items-center ${
                     index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
@@ -317,7 +330,7 @@ const About: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
@@ -335,7 +348,7 @@ const About: React.FC = () => {
                 key={member.name}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="card p-6 text-center group card-hover border-animate"
               >
@@ -367,7 +380,7 @@ const About: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8 }}
             className="max-w-4xl mx-auto"
           >
