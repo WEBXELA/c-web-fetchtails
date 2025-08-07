@@ -195,9 +195,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Animation patterns** in Framer Motion usage
 
 ### **Contact**
-- **Email**: hello@fetchtails.com
-- **Phone**: +1 (555) 123-4567
-- **Address**: 123 Pet Care Street, City, State 12345
+- **Email**: yash@fetchtails.com
+- **Phone**: +91 9633651635
+- **Address**: Gurgaon, India
 
 ## 🎯 Future Enhancements
 

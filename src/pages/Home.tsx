@@ -193,10 +193,10 @@ const Home: React.FC = () => {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <motion.div
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-secondary-800 mb-4">
@@ -211,10 +211,10 @@ const Home: React.FC = () => {
             {features.map((feature, index) => (
               <motion.div
                 key={feature.title}
-                initial={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.1, delay: index * 0.01, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="card p-6 text-center group card-hover border-animate"
               >
                 <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
@@ -239,10 +239,10 @@ const Home: React.FC = () => {
             {stats.map((stat, index) => (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.1, delay: index * 0.01, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="text-center text-white"
               >
                 <div className="text-4xl md:text-5xl font-bold mb-2">
@@ -261,10 +261,10 @@ const Home: React.FC = () => {
       <section className="section-padding bg-gray-50 bg-pattern">
         <div className="container-custom">
           <motion.div
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold text-secondary-800 mb-4">
@@ -279,10 +279,10 @@ const Home: React.FC = () => {
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={testimonial.name}
-                initial={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.1, delay: index * 0.01, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="card p-8 glow-border"
               >
                 <div className="flex items-center mb-4">

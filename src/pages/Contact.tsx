@@ -36,19 +36,19 @@ const Contact: React.FC = () => {
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
+      value: '+91 9633651635',
       description: 'Available Mon-Fri, 9AM-6PM'
     },
     {
       icon: Mail,
       title: 'Email',
-      value: 'hello@fetchtails.com',
+      value: 'yash@fetchtails.com',
       description: 'We respond within 24 hours'
     },
     {
       icon: MapPin,
       title: 'Address',
-      value: '123 Pet Care Street, City, State 12345',
+      value: 'Gurgaon, India',
       description: 'Visit us during business hours'
     },
     {
@@ -81,18 +81,18 @@ const Contact: React.FC = () => {
             </motion.div>
             
             <motion.h1
-              initial={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.2, delay: 0.1, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               className="text-5xl lg:text-6xl font-bold text-secondary-800 mb-6"
             >
               Contact Us
             </motion.h1>
             
             <motion.p
-              initial={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.2, delay: 0.15, ease: "easeOut" }}
+              transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-secondary-600 leading-relaxed"
             >
               Have questions about our services? We're here to help! 
@@ -108,10 +108,10 @@ const Contact: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <motion.div
-              initial={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.1, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl font-bold text-secondary-800 mb-6">
                 Send us a Message

@@ -27,7 +27,7 @@ const Services: React.FC = () => {
       services: ['General Checkup', 'Vaccination', 'Surgery'],
       price: '$$',
       image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=400&h=300&fit=crop',
-      phone: '+1 (555) 123-4567',
+      phone: '+91 9633651635',
       hours: 'Mon-Fri: 8AM-6PM'
     },
     {
@@ -129,10 +129,10 @@ const Services: React.FC = () => {
       <section className="section-padding bg-white">
         <div className="container-custom">
           <motion.div
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
             <div className="inline-flex bg-gray-100 rounded-full p-1">
@@ -163,10 +163,10 @@ const Services: React.FC = () => {
 
           {/* Search Bar */}
           <motion.div
-            initial={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.1, delay: 0.01, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="max-w-md mx-auto mb-8"
           >
             <div className="relative">
@@ -186,10 +186,10 @@ const Services: React.FC = () => {
             {(activeTab === 'clinics' ? filteredClinics : filteredBoarding).map((service, index) => (
               <motion.div
                 key={service.id}
-                initial={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.1, delay: index * 0.01, ease: "easeOut" }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
                 className="card overflow-hidden group card-hover border-animate"
               >
                 {/* Service Image */}
