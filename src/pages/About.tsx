@@ -74,33 +74,6 @@ const About: React.FC = () => {
     }
   ];
 
-  const team = [
-    {
-      name: 'David Chen',
-      role: 'CEO & Founder',
-      bio: 'Former veterinary technician with 10+ years in pet care industry.',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      name: 'Sarah Johnson',
-      role: 'CTO',
-      bio: 'Tech leader with expertise in mobile app development and user experience.',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      name: 'Dr. Michael Rodriguez',
-      role: 'Head of Veterinary Relations',
-      bio: 'Licensed veterinarian with 15+ years of clinical experience.',
-      image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face'
-    },
-    {
-      name: 'Emma Thompson',
-      role: 'Head of Operations',
-      bio: 'Operations expert specializing in service provider onboarding and quality assurance.',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face'
-    }
-  ];
-
   return (
     <div className="pt-20">
       {/* Hero Section */}
@@ -320,56 +293,6 @@ const About: React.FC = () => {
                 </motion.div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-secondary-800 mb-4">
-              Meet Our Team
-            </h2>
-            <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-              The passionate individuals behind FetchTails' mission to revolutionize pet care.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.1 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                className="card p-6 text-center group card-hover border-animate"
-              >
-                <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 group-hover:scale-105 transition-transform duration-300">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-secondary-800 mb-1">
-                  {member.name}
-                </h3>
-                <div className="text-primary-500 font-medium mb-3">
-                  {member.role}
-                </div>
-                <p className="text-secondary-600 text-sm leading-relaxed">
-                  {member.bio}
-                </p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
