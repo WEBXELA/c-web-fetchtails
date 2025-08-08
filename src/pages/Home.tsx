@@ -9,7 +9,13 @@ import {
   Download,
   ArrowRight,
   CheckCircle,
-  Play
+  Play,
+  User,
+  Search,
+  CreditCard,
+  FileText,
+  Calendar,
+  Activity
 } from 'lucide-react';
 
 const Home: React.FC = () => {
@@ -304,6 +310,248 @@ const Home: React.FC = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="section-padding bg-gradient-to-br from-primary-50 via-white to-primary-100">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6"
+            >
+              <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
+              <span>Simple 3-Step Process</span>
+            </motion.div>
+            
+            <h2 className="text-4xl lg:text-5xl font-bold text-secondary-800 mb-6">
+              How FetchTails Works
+            </h2>
+            <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
+              Get started with comprehensive pet care management in just three simple steps
+            </p>
+          </motion.div>
+
+          <div className="relative">
+            {/* Connection Line */}
+            <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-primary-200 via-primary-300 to-primary-200 transform -translate-y-1/2 z-0"></div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+              {[
+                {
+                  title: 'Create Pet Profile',
+                  description: 'Add your pets with detailed information including breed, age, and medical history.',
+                  icon: User,
+                  color: 'from-blue-500 to-blue-600',
+                  features: ['Multiple pets', 'Health records', 'Breed information', 'Age tracking']
+                },
+                {
+                  title: 'Find Services',
+                  description: 'Browse veterinary clinics and boarding services near you with detailed reviews.',
+                  icon: Search,
+                  color: 'from-green-500 to-green-600',
+                  features: ['Nearby search', 'Detailed reviews', 'Service ratings', 'Contact info']
+                },
+                {
+                  title: 'Book & Pay',
+                  description: 'Schedule appointments and complete secure payments through our integrated system.',
+                  icon: CreditCard,
+                  color: 'from-purple-500 to-purple-600',
+                  features: ['Instant booking', 'Secure payments', 'Appointment reminders', 'Payment history']
+                }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className="relative z-10"
+                >
+                  <div className="card p-8 text-center h-full card-hover border-animate">
+
+
+                    {/* Icon */}
+                    <div className="mb-6 pt-4">
+                      <div className={`w-24 h-24 bg-gradient-to-br ${item.color} rounded-3xl flex items-center justify-center mx-auto shadow-xl transform hover:scale-110 transition-transform duration-300`}>
+                        <item.icon size={32} className="text-white" />
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <h3 className="text-2xl font-bold text-secondary-800 mb-4">
+                      {item.title}
+                    </h3>
+                    <p className="text-secondary-600 leading-relaxed mb-6">
+                      {item.description}
+                    </p>
+
+                    {/* Features List */}
+                    <div className="space-y-2">
+                      {item.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-center justify-center space-x-2 text-sm text-secondary-600">
+                          <div className="w-1.5 h-1.5 bg-primary-500 rounded-full"></div>
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* App Screenshots Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="inline-flex items-center space-x-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6"
+            >
+              <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
+              <span>App Interface</span>
+            </motion.div>
+            
+            <h2 className="text-4xl lg:text-5xl font-bold text-secondary-800 mb-6">
+              Beautiful & Intuitive Design
+            </h2>
+            <p className="text-xl text-secondary-600 max-w-3xl mx-auto leading-relaxed">
+              Experience our thoughtfully designed interface that makes pet care management effortless
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { 
+                title: 'Dashboard', 
+                subtitle: 'Overview & Quick Actions',
+                image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=300&h=600&fit=crop',
+                color: 'from-blue-500 to-blue-600',
+                icon: Activity,
+                features: ['Pet overview', 'Quick actions', 'Recent activity', 'Health alerts']
+              },
+              { 
+                title: 'Pet Profiles', 
+                subtitle: 'Detailed Pet Information',
+                image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=300&h=600&fit=crop',
+                color: 'from-green-500 to-green-600',
+                icon: FileText,
+                features: ['Health records', 'Vaccination history', 'Medical notes', 'Photo gallery']
+              },
+              { 
+                title: 'Booking', 
+                subtitle: 'Easy Appointment Scheduling',
+                image: 'https://images.unsplash.com/photo-1587764379873-97837921fd44?w=300&h=600&fit=crop',
+                color: 'from-purple-500 to-purple-600',
+                icon: Calendar,
+                features: ['Service selection', 'Time slots', 'Payment integration', 'Confirmation']
+              },
+              { 
+                title: 'Health Tracking', 
+                subtitle: 'Comprehensive Health Monitoring',
+                image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=300&h=600&fit=crop',
+                color: 'from-orange-500 to-orange-600',
+                icon: Activity,
+                features: ['Vital signs', 'Medication tracking', 'Health trends', 'Reports']
+              }
+            ].map((screen, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                className="group"
+              >
+                <div className="card overflow-hidden card-hover border-animate">
+                  {/* Header */}
+                  <div className="p-6 pb-4">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className={`w-12 h-12 bg-gradient-to-br ${screen.color} rounded-xl flex items-center justify-center shadow-lg`}>
+                        <screen.icon size={24} className="text-white" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg text-secondary-800 group-hover:text-primary-500 transition-colors duration-300">
+                          {screen.title}
+                        </h3>
+                        <p className="text-sm text-secondary-600">
+                          {screen.subtitle}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Image */}
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={screen.image}
+                      alt={screen.title}
+                      className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+
+                  {/* Features */}
+                  <div className="p-6 pt-4">
+                    <div className="grid grid-cols-2 gap-2">
+                      {screen.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-center space-x-2 text-xs text-secondary-600">
+                          <div className="w-1 h-1 bg-primary-500 rounded-full flex-shrink-0"></div>
+                          <span className="truncate">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Call to Action */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-center mt-12"
+          >
+            <div className="inline-flex items-center space-x-2 bg-primary-50 text-primary-700 px-6 py-3 rounded-full">
+              <span className="w-2 h-2 bg-primary-500 rounded-full animate-pulse"></span>
+              <span className="font-medium">Ready to experience the app?</span>
+            </div>
+            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="btn-primary flex items-center justify-center space-x-2">
+                <span>Download App</span>
+                <ArrowRight size={20} />
+              </button>
+              <button className="btn-outline flex items-center justify-center space-x-2">
+                <span>Watch Demo</span>
+                <Play size={20} />
+              </button>
+            </div>
+          </motion.div>
         </div>
       </section>
 

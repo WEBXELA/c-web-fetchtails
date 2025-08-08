@@ -11,7 +11,6 @@ import {
   HelpCircle,
   FileText,
   Shield,
-  CreditCard,
   Calendar,
   MapPin
 } from 'lucide-react';

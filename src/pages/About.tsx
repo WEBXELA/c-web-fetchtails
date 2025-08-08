@@ -51,28 +51,7 @@ const About: React.FC = () => {
     }
   ];
 
-  const milestones = [
-    {
-      year: '2023',
-      title: 'Company Founded',
-      description: 'FetchTails was born from a simple idea: making pet care accessible to everyone.'
-    },
-    {
-      year: '2024',
-      title: 'App Launch',
-      description: 'Successfully launched our mobile app with 10,000+ downloads in the first month.'
-    },
-    {
-      year: '2024',
-      title: 'Service Expansion',
-      description: 'Partnered with 500+ veterinary clinics and 200+ boarding services.'
-    },
-    {
-      year: '2024',
-      title: 'Community Growth',
-      description: 'Reached 50,000+ successful appointments and growing user community.'
-    }
-  ];
+  // Timeline removed per request
 
   return (
     <div className="pt-20">
@@ -239,63 +218,7 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Timeline Section */}
-      <section className="section-padding bg-white">
-        <div className="container-custom">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.1 }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-bold text-secondary-800 mb-4">
-              Our Journey
-            </h2>
-            <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-              Key milestones in FetchTails' growth and development.
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-gradient-to-b from-primary-500 to-primary-600"></div>
-            
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={milestone.year}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, amount: 0.1 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className={`relative flex items-center ${
-                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
-                  }`}
-                >
-                  {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary-500 rounded-full border-4 border-white shadow-lg"></div>
-                  
-                  {/* Content */}
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <div className="card p-6">
-                      <div className="text-primary-500 font-bold text-lg mb-2">
-                        {milestone.year}
-                      </div>
-                      <h3 className="text-xl font-semibold text-secondary-800 mb-2">
-                        {milestone.title}
-                      </h3>
-                      <p className="text-secondary-600">
-                        {milestone.description}
-                      </p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Timeline Section removed as requested */}
 
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-secondary-800 to-secondary-900">
