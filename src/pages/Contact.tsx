@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { supabase } from '../utils/supabaseClient';
 import { motion } from 'framer-motion';
 import { 
   Mail, 
@@ -18,11 +19,34 @@ const Contact: React.FC = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    // Here you would typically send the form data to your backend
-    setTimeout(() => setIsSubmitted(false), 3000);
+    setLoading(true);
+    setError(null);
+    try {
+      const { error } = await supabase.from('contact_messages').insert([
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+      ]);
+      if (error) {
+        setError('Failed to send message. Please try again.');
+      } else {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setIsSubmitted(false), 3000);
+      }
+    } catch (err) {
+      setError('An unexpected error occurred.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -133,6 +157,9 @@ const Contact: React.FC = () => {
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="text-red-500 text-sm mb-2">{error}</div>
+                  )}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-secondary-700 mb-2">
@@ -201,9 +228,10 @@ const Contact: React.FC = () => {
                   <button
                     type="submit"
                     className="btn-primary flex items-center justify-center space-x-2 w-full"
+                    disabled={loading}
                   >
                     <Send size={20} />
-                    <span>Send Message</span>
+                    <span>{loading ? 'Sending...' : 'Send Message'}</span>
                   </button>
                 </form>
               )}
