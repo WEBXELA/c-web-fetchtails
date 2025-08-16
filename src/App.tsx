@@ -16,6 +16,7 @@ import HelpCenter from './pages/HelpCenter';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import FAQ from './pages/FAQ';
+import DeleteAccount from './pages/DeleteAccount';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/delete-account" element={<DeleteAccount />} />
           </Routes>
         </main>
         <Footer />
