@@ -41,15 +41,15 @@ const Home: React.FC = () => {
     {
       icon: Star,
       title: 'Quality Services',
-      description: 'Verified veterinary clinics and boarding services near you.',
+      description: 'Verified pet care services including consultation, grooming, training, walking, daycare, and boarding near you.',
       color: 'from-yellow-500 to-orange-500'
     }
   ];
 
   const stats = [
     { number: '10K+', label: 'Happy Pet Owners' },
-    { number: '500+', label: 'Veterinary Clinics' },
-    { number: '200+', label: 'Boarding Services' },
+    { number: '500+', label: 'Pet Care Providers' },
+    { number: '200+', label: 'Service Locations' },
     { number: '50K+', label: 'Appointments Booked' }
   ];
 
@@ -113,7 +113,7 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.2, delay: 0.15, ease: "easeOut" }}
                 className="text-xl text-secondary-600 leading-relaxed"
               >
-                Connect with trusted veterinary clinics and boarding services. 
+                Connect with trusted pet care services including consultation, grooming, vacation care, training, walking, daycare, and boarding. 
                 Manage your pet's health, appointments, and care all in one place.
               </motion.p>
 
@@ -155,6 +155,44 @@ const Home: React.FC = () => {
                         <p className="text-sm text-gray-500">Pet Care App</p>
                       </div>
                     </div>
+                    
+                    {/* Pet Images Section */}
+                    <div className="mb-6">
+                      <div className="flex items-center justify-center space-x-3 mb-4">
+                        <div className="relative">
+                          <img 
+                            src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=80&h=80&fit=crop&crop=face" 
+                            alt="Happy Dog" 
+                            className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
+                          />
+                          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-500 rounded-full border-2 border-white flex items-center justify-center">
+                            <span className="text-white text-xs">✓</span>
+                          </div>
+                        </div>
+                        <div className="relative">
+                          <img 
+                            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=80&h=80&fit=crop&crop=face" 
+                            alt="Cute Cat" 
+                            className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
+                          />
+                          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-white flex items-center justify-center">
+                            <span className="text-white text-xs">❤</span>
+                          </div>
+                        </div>
+                        <div className="relative">
+                          <img 
+                            src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=80&h=80&fit=crop&crop=face" 
+                            alt="Playful Puppy" 
+                            className="w-16 h-16 rounded-full object-cover border-4 border-white shadow-lg"
+                          />
+                          <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-yellow-500 rounded-full border-2 border-white flex items-center justify-center">
+                            <span className="text-white text-xs">⭐</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-center text-sm text-gray-600 font-medium">Your Beloved Pets</p>
+                    </div>
+                    
                     <div className="space-y-4">
                       <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
                         <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
@@ -357,7 +395,7 @@ const Home: React.FC = () => {
                 },
                 {
                   title: 'Find Services',
-                  description: 'Browse veterinary clinics and boarding services near you with detailed reviews.',
+                  description: 'Browse pet care services including consultation, grooming, training, walking, daycare, and boarding near you with detailed reviews.',
                   icon: Search,
                   color: 'from-green-500 to-green-600',
                   features: ['Nearby search', 'Detailed reviews', 'Service ratings', 'Contact info']
@@ -442,7 +480,7 @@ const Home: React.FC = () => {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { 
                 title: 'Dashboard', 
@@ -467,14 +505,6 @@ const Home: React.FC = () => {
                 color: 'from-purple-500 to-purple-600',
                 icon: Calendar,
                 features: ['Service selection', 'Time slots', 'Payment integration', 'Confirmation']
-              },
-              { 
-                title: 'Health Tracking', 
-                subtitle: 'Comprehensive Health Monitoring',
-                image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=300&h=600&fit=crop',
-                color: 'from-orange-500 to-orange-600',
-                icon: Activity,
-                features: ['Vital signs', 'Medication tracking', 'Health trends', 'Reports']
               }
             ].map((screen, index) => (
               <motion.div

@@ -90,7 +90,7 @@ const About: React.FC = () => {
               className="text-xl text-secondary-600 leading-relaxed"
             >
               We're on a mission to revolutionize pet care by connecting pet owners with 
-              trusted veterinary clinics and boarding services through innovative technology.
+              trusted pet care services including consultation, grooming, training, walking, daycare, and boarding through innovative technology.
             </motion.p>
           </motion.div>
         </div>
@@ -119,7 +119,7 @@ const About: React.FC = () => {
               <p className="text-lg text-secondary-600 leading-relaxed">
                 At FetchTails, we believe every pet deserves the best care possible. 
                 Our platform bridges the gap between pet owners and quality care providers, 
-                making it easier than ever to find trusted veterinary clinics and boarding services.
+                making it easier than ever to find trusted pet care services including consultation, grooming, training, walking, daycare, and boarding.
               </p>
               
               <div className="space-y-4">
@@ -127,7 +127,7 @@ const About: React.FC = () => {
                   <CheckCircle size={20} className="text-green-500 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-semibold text-secondary-800">Verified Service Providers</h3>
-                    <p className="text-secondary-600">All clinics and boarding services are thoroughly vetted</p>
+                    <p className="text-secondary-600">All pet care service providers are thoroughly vetted</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">

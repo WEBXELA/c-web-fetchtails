@@ -20,8 +20,8 @@ const HelpCenter: React.FC = () => {
 
   const faqs = [
     {
-      question: "How do I book an appointment with a veterinary clinic?",
-      answer: "You can book appointments through our app or website. Simply search for clinics in your area, select your preferred time slot, and confirm your booking. You'll receive a confirmation email and SMS."
+      question: "How do I book an appointment with a pet care service provider?",
+      answer: "You can book appointments through our app or website. Simply search for pet care services in your area, select your preferred time slot, and confirm your booking. You'll receive a confirmation email and SMS."
     },
     {
       question: "What payment methods are accepted?",
@@ -32,12 +32,12 @@ const HelpCenter: React.FC = () => {
       answer: "Yes, you can cancel or reschedule appointments up to 24 hours before the scheduled time. Simply go to your bookings section in the app and select the modify option."
     },
     {
-      question: "How do I find pet boarding services near me?",
-      answer: "Use our location-based search to find boarding services in your area. You can filter by ratings, distance, and services offered. Each listing includes photos, reviews, and detailed information."
+      question: "How do I find pet care services near me?",
+      answer: "Use our location-based search to find pet care services including consultation, grooming, training, walking, daycare, and boarding in your area. You can filter by ratings, distance, and services offered. Each listing includes photos, reviews, and detailed information."
     },
     {
       question: "What if I have an emergency with my pet?",
-      answer: "For emergencies, use our emergency services feature which connects you directly to 24/7 veterinary care. You can also call our emergency hotline at +91 9633651635."
+      answer: "For emergencies, use our emergency services feature which connects you directly to 24/7 pet care services. You can also call our emergency hotline at +91 9633651635."
     },
     {
       question: "How do I know if a service provider is verified?",
@@ -84,7 +84,7 @@ const HelpCenter: React.FC = () => {
     {
       icon: Calendar,
       title: 'Book Appointment',
-      description: 'Schedule with veterinary clinics',
+      description: 'Schedule with pet care service providers',
       path: '/services'
     },
     {

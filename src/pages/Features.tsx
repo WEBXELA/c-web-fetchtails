@@ -72,7 +72,7 @@ const Features: React.FC = () => {
       title: 'Service Discovery',
       icon: MapPin,
       color: 'from-yellow-500 to-orange-500',
-      description: 'Find the best veterinary clinics and boarding services near you with detailed reviews.',
+      description: 'Find the best pet care services including consultation, grooming, training, walking, daycare, and boarding near you with detailed reviews.',
       details: [
         'Location-based search',
         'Service provider ratings',

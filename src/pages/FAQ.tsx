@@ -31,7 +31,7 @@ const FAQ: React.FC = () => {
     general: [
       {
         question: "What is FetchTails?",
-        answer: "FetchTails is a comprehensive pet care platform that connects pet owners with trusted veterinary clinics and boarding services. We make it easy to find, book, and manage pet care services in your area."
+        answer: "FetchTails is a comprehensive pet care platform that connects pet owners with trusted pet care services including consultation, grooming, training, walking, daycare, and boarding. We make it easy to find, book, and manage pet care services in your area."
       },
       {
         question: "How do I get started with FetchTails?",
@@ -85,7 +85,7 @@ const FAQ: React.FC = () => {
     services: [
       {
         question: "What types of services are available?",
-        answer: "We offer a wide range of pet care services including veterinary check-ups, vaccinations, emergency care, grooming, boarding, pet sitting, and specialized treatments. Each provider lists their specific services."
+        answer: "We offer a wide range of pet care services including consultation, grooming, training, walking, daycare, boarding, and specialized treatments. Each provider lists their specific services."
       },
       {
         question: "How do I find services near me?",
@@ -107,7 +107,7 @@ const FAQ: React.FC = () => {
       },
       {
         question: "What if there's an emergency during my appointment?",
-        answer: "All our veterinary partners are equipped to handle emergencies. If you experience an emergency, contact the service provider immediately, and they'll guide you through the next steps."
+        answer: "All our pet care service partners are equipped to handle emergencies. If you experience an emergency, contact the service provider immediately, and they'll guide you through the next steps."
       },
       {
         question: "Is my pet's information secure?",

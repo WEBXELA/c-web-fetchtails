@@ -1,6 +1,6 @@
 # 🐾 FetchTails - Professional Pet Care Website
 
-A modern, responsive website for FetchTails - a comprehensive pet care management platform connecting pet owners with veterinary clinics and boarding services.
+A modern, responsive website for FetchTails - a comprehensive pet care management platform connecting pet owners with consultation, grooming, training, walking, daycare, and boarding services.
 
 ## 🌟 Features
 
@@ -13,7 +13,7 @@ A modern, responsive website for FetchTails - a comprehensive pet care managemen
 ### **Pages & Sections**
 - **Home**: Hero section, features, testimonials, and call-to-action
 - **About**: Company story, mission, values, timeline, and team
-- **Services**: Veterinary clinics and boarding services with search functionality
+- **Services**: Consultation, grooming, training, walking, daycare, and boarding services with search functionality
 - **Contact**: Contact form, company information, and FAQ
 - **Download**: App download links and features showcase
 
@@ -221,7 +221,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🐕 About FetchTails
 
-FetchTails is a comprehensive pet care management platform that connects pet owners with trusted veterinary clinics and boarding services. Our mission is to make pet care accessible, convenient, and reliable for everyone.
+FetchTails is a comprehensive pet care management platform that connects pet owners with trusted pet care services including consultation, grooming, training, walking, daycare, and boarding. Our mission is to make pet care accessible, convenient, and reliable for everyone.
 
 ### **Key Features**
 - **Pet Health Management**: Track vaccinations, medications, and health records

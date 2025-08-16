@@ -18,11 +18,12 @@ const Gallery: React.FC = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
   const categories = [
-    { id: 'all', name: 'All', count: 24 },
-    { id: 'app-screens', name: 'App Screens', count: 8 },
-    { id: 'pets', name: 'Pets', count: 6 },
-    { id: 'clinics', name: 'Clinics', count: 5 },
-    { id: 'boarding', name: 'Boarding', count: 5 }
+    { id: 'all', name: 'All', count: 25 },
+    { id: 'consultation', name: 'Consultation', count: 5 },
+    { id: 'boarding', name: 'Boarding', count: 5 },
+    { id: 'grooming', name: 'Grooming', count: 5 },
+    { id: 'training', name: 'Training', count: 5 },
+    { id: 'walking', name: 'Walking', count: 5 }
   ];
 
   const galleryItems = [
@@ -63,7 +64,7 @@ const Gallery: React.FC = () => {
       id: 5,
       category: 'app-screens',
       title: 'Service Discovery',
-      description: 'Browse veterinary clinics and boarding services',
+      description: 'Browse pet care services including consultation, grooming, training, walking, daycare, and boarding',
       image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=400&fit=crop',
       tags: ['services', 'discovery', 'ui']
     },
@@ -140,46 +141,46 @@ const Gallery: React.FC = () => {
       image: 'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=600&h=400&fit=crop',
       tags: ['cat', 'elegant', 'graceful']
     },
-    // Clinics
+    // Consultation
     {
-      id: 15,
-      category: 'clinics',
-      title: 'Modern Veterinary Clinic',
-      description: 'State-of-the-art veterinary facility',
+      id: 21,
+      category: 'consultation',
+      title: 'Modern Consultation Room',
+      description: 'State-of-the-art consultation facility',
       image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=600&h=400&fit=crop',
-      tags: ['clinic', 'modern', 'veterinary']
+      tags: ['consultation', 'modern', 'professional']
     },
     {
-      id: 16,
-      category: 'clinics',
-      title: 'Examination Room',
-      description: 'Professional pet examination area',
+      id: 22,
+      category: 'consultation',
+      title: 'Consultation Area',
+      description: 'Comfortable consultation space for pets and owners',
       image: 'https://images.unsplash.com/photo-1587764379873-97837921fd44?w=600&h=400&fit=crop',
-      tags: ['examination', 'professional', 'medical']
+      tags: ['consultation', 'comfortable', 'space']
     },
     {
-      id: 17,
-      category: 'clinics',
-      title: 'Waiting Area',
-      description: 'Comfortable waiting area for pets and owners',
-      image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop',
-      tags: ['waiting', 'comfortable', 'reception']
+      id: 23,
+      category: 'consultation',
+      title: 'Consultation Equipment',
+      description: 'Professional consultation and examination equipment',
+      image: 'https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?w=600&h=400&fit=crop',
+      tags: ['consultation', 'equipment', 'professional']
     },
     {
-      id: 18,
-      category: 'clinics',
-      title: 'Surgery Suite',
-      description: 'Advanced surgical facilities for pets',
-      image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=400&fit=crop',
-      tags: ['surgery', 'advanced', 'medical']
+      id: 24,
+      category: 'consultation',
+      title: 'Consultation Waiting Area',
+      description: 'Welcoming waiting area for consultation appointments',
+      image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&h=400&fit=crop',
+      tags: ['consultation', 'waiting', 'area']
     },
     {
-      id: 19,
-      category: 'clinics',
-      title: 'Recovery Room',
-      description: 'Post-treatment recovery area',
-      image: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=600&h=400&fit=crop',
-      tags: ['recovery', 'post-treatment', 'care']
+      id: 25,
+      category: 'consultation',
+      title: 'Consultation Services',
+      description: 'Comprehensive consultation and care services',
+      image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop',
+      tags: ['consultation', 'services', 'care']
     },
     // Boarding
     {

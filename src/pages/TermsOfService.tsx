@@ -36,11 +36,11 @@ const TermsOfService: React.FC = () => {
       content: [
         {
           subtitle: "Platform Purpose",
-          text: "FetchTails is a pet care platform that connects pet owners with veterinary clinics and boarding services. We facilitate appointments, payments, and communication between users and service providers."
+          text: "FetchTails is a pet care platform that connects pet owners with pet care service providers including consultation, grooming, training, walking, daycare, and boarding services. We facilitate appointments, payments, and communication between users and service providers."
         },
         {
           subtitle: "Service Providers",
-          text: "We partner with independent veterinary clinics and boarding services. These providers are responsible for their own services, pricing, and quality standards. We do not provide veterinary or boarding services directly."
+          text: "We partner with independent pet care service providers including consultation, grooming, training, walking, daycare, and boarding services. These providers are responsible for their own services, pricing, and quality standards. We do not provide pet care services directly."
         },
         {
           subtitle: "Service Availability",
@@ -144,7 +144,7 @@ const TermsOfService: React.FC = () => {
       content: [
         {
           subtitle: "Service Disclaimer",
-          text: "We provide a platform for connecting users with service providers. We are not responsible for the quality, safety, or outcome of services provided by third-party veterinary clinics or boarding services."
+          text: "We provide a platform for connecting users with service providers. We are not responsible for the quality, safety, or outcome of services provided by third-party pet care service providers including consultation, grooming, training, walking, daycare, and boarding services."
         },
         {
           subtitle: "Liability Limits",

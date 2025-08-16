@@ -30,7 +30,7 @@ const PrivacyPolicy: React.FC = () => {
         },
         {
           subtitle: "Location Information",
-          text: "With your consent, we may collect your location information to help you find nearby veterinary clinics and boarding services."
+          text: "With your consent, we may collect your location information to help you find nearby pet care services including consultation, grooming, training, walking, daycare, and boarding."
         }
       ]
     },
@@ -58,7 +58,7 @@ const PrivacyPolicy: React.FC = () => {
       content: [
         {
           subtitle: "Service Providers",
-          text: "We share your information with veterinary clinics and boarding services to facilitate appointments and ensure quality service delivery. We only share necessary information required for service provision."
+          text: "We share your information with pet care service providers including consultation, grooming, training, walking, daycare, and boarding services to facilitate appointments and ensure quality service delivery. We only share necessary information required for service provision."
         },
         {
           subtitle: "Payment Processors",

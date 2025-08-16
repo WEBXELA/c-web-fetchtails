@@ -28,10 +28,13 @@ const Footer: React.FC = () => {
     {
       title: 'Services',
       links: [
-        { name: 'Veterinary Clinics', path: '/services' },
-        { name: 'Pet Boarding', path: '/services' },
-        { name: 'Pet Care', path: '/services' },
-        { name: 'Emergency Services', path: '/services' },
+        { name: 'Consultation', path: '/services' },
+        { name: 'Grooming', path: '/services' },
+        { name: 'Vacation Care', path: '/services' },
+        { name: 'Training', path: '/services' },
+        { name: 'Dog Walking', path: '/services' },
+        { name: 'Daycare', path: '/services' },
+        { name: 'Boarding', path: '/services' },
       ],
     },
     {
@@ -73,7 +76,7 @@ const Footer: React.FC = () => {
                 <span className="text-2xl font-bold">FetchTails</span>
               </div>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                Connecting pet owners with the best veterinary clinics and boarding services. 
+                Connecting pet owners with the best pet care services including consultation, grooming, training, walking, daycare, and boarding. 
                 Your trusted partner in comprehensive pet care management.
               </p>
               

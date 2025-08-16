@@ -36,7 +36,7 @@ const DownloadPage: React.FC = () => {
     {
       icon: Users,
       title: 'Service Provider Network',
-      description: 'Access to 500+ verified veterinary clinics and boarding services.',
+      description: 'Access to 500+ verified pet care services including consultation, grooming, training, walking, daycare, and boarding.',
       color: 'from-purple-500 to-violet-500'
     }
   ];
@@ -108,7 +108,7 @@ const DownloadPage: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-xl text-secondary-600 leading-relaxed"
               >
-                Connect with trusted veterinary clinics and boarding services. 
+                Connect with trusted pet care services including consultation, grooming, training, walking, daycare, and boarding. 
                 Manage your pet's health, appointments, and care all in one place.
               </motion.p>
 
