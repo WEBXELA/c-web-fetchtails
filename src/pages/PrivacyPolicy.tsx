@@ -9,7 +9,11 @@ import {
   Globe,
   FileText,
   Calendar,
-  CheckCircle
+  CheckCircle,
+  Smartphone,
+  MapPin,
+  Camera,
+  Wifi
 } from 'lucide-react';
 
 const PrivacyPolicy: React.FC = () => {
@@ -31,6 +35,32 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Location Information",
           text: "With your consent, we may collect your location information to help you find nearby pet care services including consultation, grooming, training, walking, daycare, and boarding."
+        },
+        {
+          subtitle: "Device Information",
+          text: "We collect device-specific information such as your hardware model, operating system version, unique device identifiers, mobile network information, and device settings."
+        }
+      ]
+    },
+    {
+      title: "App Permissions and Data Access",
+      icon: Smartphone,
+      content: [
+        {
+          subtitle: "Location Permission",
+          text: "Our app requests location access to help you find nearby pet care services. This permission is optional and you can deny it without affecting core app functionality. Location data is only used for service discovery and is not shared with third parties."
+        },
+        {
+          subtitle: "Camera Permission",
+          text: "Camera access is requested to allow you to take photos of your pets for their profiles and to upload images for service requests. Photos are stored securely and are only accessible to you and authorized service providers."
+        },
+        {
+          subtitle: "Storage Permission",
+          text: "Storage access is needed to save pet photos, download appointment confirmations, and cache app data for offline use. We do not access files outside of our app's designated storage area."
+        },
+        {
+          subtitle: "Network Access",
+          text: "Internet access is required for core app functionality including booking appointments, syncing data, and receiving notifications. We use secure connections (HTTPS) for all data transmission."
         }
       ]
     },
@@ -49,6 +79,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Personalization",
           text: "We use your information to personalize your experience, including showing relevant services and recommendations based on your location and preferences."
+        },
+        {
+          subtitle: "App Functionality",
+          text: "We use collected data to ensure the app works properly, including debugging, performance monitoring, and improving user experience."
         }
       ]
     },
@@ -67,6 +101,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Legal Requirements",
           text: "We may disclose your information if required by law, court order, or government request, or to protect our rights, property, or safety."
+        },
+        {
+          subtitle: "No Third-Party Advertising",
+          text: "We do not sell, rent, or share your personal information with third-party advertisers. Any advertising within our app is for our own services only."
         }
       ]
     },
@@ -85,6 +123,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Access Controls",
           text: "We limit access to your personal information to authorized employees and service providers who need access to perform their duties."
+        },
+        {
+          subtitle: "Regular Security Audits",
+          text: "We conduct regular security assessments and updates to maintain the highest level of data protection for our users."
         }
       ]
     },
@@ -107,6 +149,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Marketing Preferences",
           text: "You can opt out of marketing communications at any time by updating your preferences or using the unsubscribe link in our emails."
+        },
+        {
+          subtitle: "Permission Management",
+          text: "You can manage app permissions through your device settings at any time. Revoking permissions may affect certain app features."
         }
       ]
     },
@@ -121,6 +167,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Account Deletion",
           text: "When you delete your account, we will delete or anonymize your personal information, except where retention is required by law or for legitimate business purposes."
+        },
+        {
+          subtitle: "Data Backup",
+          text: "We maintain secure backups of your data for disaster recovery purposes. These backups are automatically deleted after 30 days."
         }
       ]
     },
@@ -139,6 +189,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Cookie Preferences",
           text: "You can control cookie settings through your browser preferences, though disabling certain cookies may affect the functionality of our services."
+        },
+        {
+          subtitle: "No Cross-App Tracking",
+          text: "We do not use cross-app tracking technologies or share data with other apps for advertising purposes."
         }
       ]
     },
@@ -153,6 +207,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Parental Consent",
           text: "If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information promptly."
+        },
+        {
+          subtitle: "COPPA Compliance",
+          text: "We comply with the Children's Online Privacy Protection Act (COPPA) and do not knowingly collect personal information from children under 13 without parental consent."
         }
       ]
     },
@@ -167,6 +225,32 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Adequate Protection",
           text: "We ensure that such transfers comply with applicable data protection laws and implement appropriate safeguards to protect your information."
+        },
+        {
+          subtitle: "GDPR Compliance",
+          text: "For users in the European Union, we comply with GDPR requirements and provide additional rights and protections as required by law."
+        }
+      ]
+    },
+    {
+      title: "Google Play Store Compliance",
+      icon: CheckCircle,
+      content: [
+        {
+          subtitle: "Play Store Policies",
+          text: "Our app complies with all Google Play Store policies including privacy, data handling, and user protection requirements. We regularly review and update our practices to maintain compliance."
+        },
+        {
+          subtitle: "App Permissions",
+          text: "All app permissions are clearly explained and are only used for their intended purpose. Users can revoke permissions at any time through device settings."
+        },
+        {
+          subtitle: "Data Transparency",
+          text: "We provide clear information about what data we collect, how we use it, and who we share it with, as required by Google Play Store policies."
+        },
+        {
+          subtitle: "User Control",
+          text: "Users have full control over their data and can request access, modification, or deletion of their information at any time."
         }
       ]
     },
@@ -185,6 +269,10 @@ const PrivacyPolicy: React.FC = () => {
         {
           subtitle: "Continued Use",
           text: "Your continued use of our services after any changes to this policy constitutes acceptance of the updated policy."
+        },
+        {
+          subtitle: "App Store Updates",
+          text: "For app users, we will notify you of significant policy changes through in-app notifications and may require you to accept the updated policy to continue using the app."
         }
       ]
     }
@@ -226,7 +314,7 @@ const PrivacyPolicy: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl text-secondary-600 leading-relaxed mb-4"
             >
-              Your privacy is important to us. This policy explains how we collect, use, and protect your information.
+              Your privacy is important to us. This policy explains how we collect, use, and protect your information in compliance with Google Play Store requirements.
             </motion.p>
             
             <motion.div
