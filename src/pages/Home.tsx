@@ -55,21 +55,21 @@ const Home: React.FC = () => {
 
   const testimonials = [
     {
-      name: 'Sarah Johnson',
+      name: 'Yatharth Chauhan',
       role: 'Pet Owner',
-      content: 'FetchTails made finding a vet so easy! The app is intuitive and the service quality is outstanding.',
+      content: 'FetchTails makes everything so simple. I can track vaccinations, set reminders, and find trusted vets near my home. It\'s become part of our routine for Bruno and Misty.',
       rating: 5
     },
     {
-      name: 'Dr. Michael Chen',
-      role: 'Veterinarian',
-      content: 'As a service provider, FetchTails has helped us reach more pet owners and manage appointments efficiently.',
+      name: 'Anurag Mishra',
+      role: 'Pet Owner',
+      content: 'The boarding service booking was seamless. My dog had a great time and I was updated throughout. Highly recommend!',
       rating: 5
     },
     {
-      name: 'Emma Rodriguez',
+      name: 'Priyanshu Gupta',
       role: 'Pet Owner',
-      content: 'The boarding service booking was seamless. My dog had a great time and I was updated throughout.',
+      content: 'Managing two pets across vaccinations and grooming is easy now. Everything stays in one place with timely alerts.',
       rating: 5
     }
   ];
