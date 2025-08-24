@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 
 const TermsOfService: React.FC = () => {
-  const lastUpdated = "January 15, 2025";
+  const lastUpdated = "August 24, 2025";
 
   const sections = [
     {

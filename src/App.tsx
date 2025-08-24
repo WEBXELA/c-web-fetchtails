@@ -17,6 +17,9 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import FAQ from './pages/FAQ';
 import DeleteAccount from './pages/DeleteAccount';
+import ShippingPolicy from './pages/ShippingPolicy';
+import CancellationRefunds from './pages/CancellationRefunds';
+import PolicyLinks from './pages/PolicyLinks';
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
             <Route path="/help" element={<HelpCenter />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/shipping" element={<ShippingPolicy />} />
+            <Route path="/cancellation-refunds" element={<CancellationRefunds />} />
+            <Route path="/policies" element={<PolicyLinks />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/delete-account" element={<DeleteAccount />} />
           </Routes>
